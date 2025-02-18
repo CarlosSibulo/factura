@@ -1,0 +1,14 @@
+public class tienda_linea {
+    public static void main(String[]args){
+        int opcion = 0;
+        Scanner dato_opcion= new Scanner(System.in);
+        System.out.print("por favor elija su producto");
+        opcion= dato_opcion.nextInt();
+        System.out.print("algo mas que quiera agregar");
+        while (opcion>0){
+            System.out.println("como desea pagar");
+            System.out.println("lo siento ya no te queda fondos");
+        }        
+    }
+    
+}
