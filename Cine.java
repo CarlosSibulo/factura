@@ -1,20 +1,36 @@
-public class cine {
-    public static void main(String[] args){
-        Scanner OpcionValor = new Scanner(System.in);
-        System.out.print("por favor,ingrese su edad");
-        int valoropcion= OpcionValor.nextInt();
-        switch (valoropcion){
-            case 1:
-                niños de 7 años:(peliculas animadas educativas para todas las edades);
-            case 2:
-                 adolescemtes de 17 años:(peliculas animaciones, aventura, comedias familiares);
-            case 3:
-                Adultos de 18 y 3 años:(variedad de genero, accion, drama, comedia, ciencia ficcion);
-            case 4:
-                personas Mayores de 31 años:(pelicula clasicas, dramas);
-            default: 
-                System.out.print("lo siento su edad no cumple con los requistos");
-        }
-    }
+package Ejercicios.java;
+
+import java.util.Scanner;
+
+public class Asistencia_Virtual_Cine {
     
+    public static void main (String[] args){
+         String Cine();  
+    }
+    public static void Cine (String[] args){
+         Scanner TomarDatos = new Scanner(System.in);
+         System.out.print("Ingrese una Edad: ");
+         int Edad = dato_Edad.nextInt();
+         int Cine = TomarDatos.nextInt();
+         Scanner ProcesarDatos = new Scanner(System.in);
+         int Cine = ProcesarDatos.nextInt();
+          switch (Edad) {
+            case 'niños 9 años':
+                System.out.println("peliculas animadas y educativas");
+                break;
+            case 'Niños y Adolecentes 10 y 17 años':
+                System.out.println("peliculas animaciones, aventuras y comedias familiares ");
+                break;
+            case 'Adultos 18 y 30 años':
+                System.out.println("peliculas accion, drama, comedia y ciencia ficcion");
+                break;
+            case 'Adultos mayores de 31 años ':
+                System.out.println("peliculas comedias y dramas de su interes");
+                break;
+            default:
+                System.out.println("Error");
+                return;
+         }
+    }
+
 }
